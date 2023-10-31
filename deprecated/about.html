@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Hosiery Manufacturing Unit</title>
+    <link rel="stylesheet" href="styles.css"> <!-- You can link your own stylesheet here -->
+    <style>
+        
+        .section, footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .section {
+            background-color: red;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            height: 100vh; /* Full screen height */
+        }
+
+        .section-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+            .section-content img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .section-content .text-column {
+                flex-basis: 50%;
+                padding: 0 30px;
+                text-align: left;
+            }
+
+            .section-content h2 {
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+
+        .columns {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .column {
+            flex-basis: calc(50% - 20px);
+        }
+
+        footer {
+            background-color: white;
+            color: red;
+        }
+
+        .second-section {
+            background-color: white;
+            color: red;
+            padding: 100px 0;
+            text-align: center;
+            height: 100vh; /* Full screen height */
+            margin-top: 30px; /* Adding margin between sections */
+        }
+
+        .second-section-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .second-section-column {
+            flex-basis: 50%;
+            padding: 0 30px;
+            text-align: left;
+        }
+
+        .second-section-column img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .second-section-column p {
+            margin-top: 0;
+        }
+
+        .manufacturing-section {
+            background-color: red;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            height: 100vh; /* Full screen height */
+            margin-top: 30px; /* Adding margin between sections */
+        }
+
+        .manufacturing-section-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .manufacturing-process {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .manufacturing-process img {
+            max-width: 20%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .manufacturing-process-text {
+            text-align: center;
+        }
+
+        .manufacturing-section p {
+            margin-top: 30px;
+        }
+
+        .machinery-section {
+            background-color: white;
+            color: red;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .machinery-section-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .machinery-section-column {
+            flex-basis: 50%;
+            padding: 0 30px;
+            text-align: left;
+        }
+
+        .machinery-section-column img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .yarns-section {
+            background-color: red;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .yarns-section-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .yarns-section-column {
+            flex-basis: 50%;
+            padding: 0 30px;
+            text-align: left;
+        }
+
+        .yarns-section-column img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="work.html">Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html"><img src="logo.png" alt="Logo"></a></li>
+                <li><a href="machines.html">Machines</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section">
+        <div class="section-content">
+            <img src="about-image.jpg" alt="About Us Image">
+            <div class="text-column">
+                <h2>About Us</h2>
+                <p>We are a leading hosiery manufacturing unit specializing in...</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="second-section">
+        <div class="second-section-content">
+            <div class="second-section-column">
+                <div class="columns">
+                    <div class="column">
+                        <img src="image1.jpg" alt="Image 1">
+                        <p>Image 1 Description</p>
+                    </div>
+                    <div class="column">
+                        <img src="image2.jpg" alt="Image 2">
+                        <p>Image 2 Description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="second-section-column">
+                <h2>Our Journey</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit turpis sit amet lacus dictum, a dictum nulla venenatis. In venenatis ex ut facilisis. Nullam ut nisl nec augue imperdiet fringilla. Maecenas sit amet mi nisl.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="manufacturing-section">
+        <div class="manufacturing-section-content">
+            <h2>Manufacturing Process</h2>
+            <div class="manufacturing-process">
+                <div class="manufacturing-process-text">
+                    <img src="process-image1.jpg" alt="Process Image 1">
+                    <p>Image 1 Subtext</p>
+                </div>
+                <div class="manufacturing-process-text">
+                    <img src="process-image2.jpg" alt="Process Image 2">
+                    <p>Image 2 Subtext</p>
+                </div>
+                <div class="manufacturing-process-text">
+                    <img src="process-image3.jpg" alt="Process Image 3">
+                    <p>Image 3 Subtext</p>
+                </div>
+                <div class="manufacturing-process-text">
+                    <img src="process-image4.jpg" alt="Process Image 4">
+                    <p>Image 4 Subtext</p>
+                </div>
+                <div class="manufacturing-process-text">
+                    <img src="process-image5.jpg" alt="Process Image 5">
+                    <p>Image 5 Subtext</p>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit turpis sit amet lacus dictum, a dictum nulla venenatis. In venenatis ex ut facilisis. Nullam ut nisl nec augue imperdiet fringilla. Maecenas sit amet mi nisl.</p>
+        </div>
+    </section>
+
+    <section class="machinery-section">
+        <div class="machinery-section-content">
+            <div class="machinery-section-column">
+                <img src="machinery-image.jpg" alt="Machinery Image">
+            </div>
+            <div class="machinery-section-column">
+                <h2>Machinery</h2>
+                <p>We utilize advanced machinery and equipment...</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="yarns-section">
+        <div class="yarns-section-content">
+            <div class="yarns-section-column">
+                <img src="yarns-image.jpg" alt="Yarns Image">
+            </div>
+            <div class="yarns-section-column">
+                <h2>Yarns</h2>
+                <p>We source high-quality yarns from trusted suppliers...</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p>Email: contact@example.com</p>
+                <p>Phone: +123456789</p>
+                <p>Visit: <a href="https://www.google.com/maps?q=R.K.Sethi+Knitwears+Factory,Noorwala+Road,Ludhiana,Punjab+141007" target="_blank">R.K.Sethi Knitwears Factory, Noorwala Road, Ludhiana, Punjab 141007</a></p>
+            </div>
+            <div class="footer-column">
+                <h3>About</h3>
+                <p>We are a leading hosiery manufacturing unit...</p>
+            </div>
+            <div class="footer-column">
+                <h3>Social</h3>
+                <p>Follow us on social media:</p>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; 2023 Hosiery Manufacturing Unit. All rights reserved.</p>
+    </footer>
+</body>
+</html>

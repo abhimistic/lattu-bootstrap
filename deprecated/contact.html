@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Hosiery Manufacturing Unit</title>
+    <link rel="stylesheet" href="styles.css"> <!-- You can link your own stylesheet here -->
+    <style>
+<!-- CSS for contact Form -->
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+input, textarea {
+  color: #5A5A5A;
+  font: inherit;
+  margin: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+#form-container {
+  font-family: 'Montserrat', Arial, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  --border: solid 3px #474544;
+  max-width: 768px;
+  margin: 20px auto;
+  position: relative;
+  background: #e2e2e2;
+}
+
+form {
+  padding: 37.5px;
+  margin: 50px 0;
+}
+
+.email {
+	float: right;
+	width: 45%;
+}
+
+input[type='text'], [type='email'], textarea {
+	background: none;
+  border: none;
+	border-bottom: solid 2px #474544;
+	color: #474544;
+	font-size: 1.000em;
+  font-weight: 400;
+  letter-spacing: 1px;
+	margin: 0em 0 1.875em 0;
+	padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+input[type='text']:focus, [type='email']:focus, textarea:focus {
+	outline: none;
+	padding: 0 0 0.875em 0;
+}
+
+.message {
+	float: none;
+}
+
+.name {
+	float: left;
+	width: 45%;
+}
+
+.telephone {
+  width: 100%;
+}
+
+textarea {
+	line-height: 150%;
+	height: 150px;
+	resize: none;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+	color: #474544;
+}
+
+:-moz-placeholder { 
+	color: #474544;
+	opacity: 1;
+}
+
+::-moz-placeholder {
+	color: #474544;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color: #474544;
+}
+
+#form_button {
+  background: none;
+  border: solid 2px #474544;
+  color: #474544;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#form_button:hover {
+  background: #474544;
+  color: #F2F3EB;
+}
+
+@media screen and (max-width: 768px) {
+  #form-container {
+    margin: 20px auto;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 26px;
+  }
+    
+  #form_button {
+    padding: 15px 25px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 18px;
+  }
+    
+  input[type='text'], [type='email'], select, textarea {
+    font-size: 0.875em;
+  }
+}
+<!-- CSS for contact Form Ends here-->
+
+        .slider {
+            display: flex;
+            overflow: hidden;
+            height: 80vh;
+            background-color: white;
+        }
+
+        .slide {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+			background-color: lightgrey;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .slider-content {
+            background-color: white;
+            color: black;
+            padding: 20px;
+			display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .enquiry-section {
+            display: flex;
+            height: 100vh; /* Full screen height */
+        }
+
+        .enquiry-left {
+            flex: 2;
+            background-color: red;
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+			align-items: center;
+        }
+		
+		h3 {
+			margin-top: 25px;
+		}
+        .enquiry-form {
+            background-color: grey;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .enquiry-form input,
+        .enquiry-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 3px;
+        }
+
+        .enquiry-form button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .enquiry-right {
+            flex: 1;
+            background-color: #e2e2e2;
+            color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+		a.a_whatsapp {
+			color: red;
+			text-decoration:none;
+		}
+        .meet-us {
+            background-color: white;
+            color: red;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .meet-us-columns {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .meet-us-column {
+            flex-basis: 48%;
+        }
+		
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="work.html">Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html"><img src="logo.png" alt="Logo"></a></li>
+                <li><a href="machines.html">Machines</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="slider">
+        <div class="slide">
+            <img src="slide1.jpg" alt="Slide 1">
+        </div>
+        <div class="slide">
+            <img src="slide2.jpg" alt="Slide 2">
+        </div>
+    </div>
+
+    <div class="slider-content">
+        <p>This is a sample paragraph under the images.</p>
+    </div>
+
+    <section class="enquiry-section">
+        <div class="enquiry-left">
+            <h3>Enquiry Form</h3>
+			<div id="form-container">
+			<form action="#" method="post" id="contact_form">
+			<div class="name">
+			<label for="name"></label>
+			<input type="text" placeholder="My name is" name="name" id="name_input" required>
+			</div>
+			<div class="email">
+			<label for="email"></label>
+			<input type="email" placeholder="My e-mail is" name="email" id="email_input" required>
+			</div>
+			<div class="telephone">
+			<label for="name"></label>
+			<input type="text" placeholder="My number is" name="telephone" id="telephone_input" required>
+			</div>
+			<div class="message">
+			<label for="message"></label>
+			<textarea name="message" placeholder="I'd like to talk about" id="message_input" cols="30" rows="5" required></textarea>
+			</div>
+			<div class="submit">
+			<input type="submit" value="Send Message" id="form_button" />
+			</div>
+			</form><!-- // End form -->
+			</div><!-- // End #container -->
+        </div>
+        <div class="enquiry-right">
+            <a class="a_whatsapp" href="https://wa.me/1234567890" target="_blank">We're also available on WhatsApp</a>
+        </div>
+    </section>
+
+    <div class="meet-us">
+        <div class="meet-us-columns">
+            <div class="meet-us-column">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d181397.4649309079!2d-118.41514791117578!3d34.02088240329235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzQuMTQwLjYwOTI!5e0!3m2!1sen!2sus!4v1561546335896!5m2!1sen!2sus" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<p>R.K.Sethi Knitwears Factory, Noorwala Road, Ludhiana, Punjab 141007</p>
+            </div>
+            <div class="meet-us-column">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d181397.4649309079!2d-118.41514791117578!3d34.02088240329235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzQuMTQwLjYwOTI!5e0!3m2!1sen!2sus!4v1561546335896!5m2!1sen!2sus" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<p>R.K.Sethi Knitwears Factory, Noorwala Road, Ludhiana, Punjab 141007</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p>Email: contact@example.com</p>
+                <p>Phone: +123456789</p>
+                <p>Visit: <a href="https://www.google.com/maps?q=R.K.Sethi+Knitwears+Factory,Noorwala+Road,Ludhiana,Punjab+141007" target="_blank">R.K.Sethi Knitwears Factory, Noorwala Road, Ludhiana, Punjab 141007</a></p>
+            </div>
+            <div class="footer-column">
+                <h3>About</h3>
+                <p>We are a leading hosiery manufacturing unit...</p>
+            </div>
+            <div class="footer-column">
+                <h3>Social</h3>
+                <p>Follow us on social media:</p>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; 2023 Hosiery Manufacturing Unit. All rights reserved.</p>
+    </footer>
+</body>
+</html>
